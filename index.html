@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Development hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <a class="navbar-brand" href="#"> <img src="data:image/png;base64,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" alt="Logo" height="30" class="d-inline-block align-text-top">Code with Hari </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://hari-hara7.github.io/user-experiance/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://hari-hara7.github.io/portfolio1/">About me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Technologies
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://hari-hara7.github.io/pro-developer-/">Web development</a></li>
+                            <li><a class="dropdown-item" href="https://hari-hara7.github.io/DSA-learning-platform/">Data structures and algorithm</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://hari-hara7.github.io/ui-and-ux-learning/">UI and UX</a></li>
+                            <li><a class="dropdown-item" href="https://hari-hara7.github.io/NMAMIT-notes-website/">NMAMIT notes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.istockphoto.com/id/1442974342/photo/thinking-man-computer-coding-software-development-and-programming-for-writing-code-media.jpg?s=612x612&w=0&k=20&c=LOpm6zZM4Mk4UOGm9JoinR542VUknFYt6Ef7BkThZss=" class="d-block w-100" alt="web development">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Web Development</h5>
+                        <p>Web development involves the creation and maintenance of websites and web applications. It encompasses various technologies and skills, including HTML, CSS, JavaScript, and more. Web developers design and build the visual elements, layout, and functionality of websites, ensuring a seamless and interactive user experience. Stay updated with the latest trends and frameworks to deliver modern and efficient web solutions.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?w=1500&auto=500&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="Data Structures and Algorithms">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Data Structures and Algorithms (DSA)</h5>
+                        <p>Data Structures and Algorithms are fundamental concepts in computer science that play a crucial role in designing efficient and scalable software. Understanding DSA is essential for writing optimized code, improving the efficiency of programs, and solving complex real-world problems. Whether it's arrays, linked lists, trees, or sorting algorithms, mastering DSA is key to becoming a proficient and versatile programmer.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.webp?b=1&s=170667a&w=0&k=20&c=iQE4in2blXsYoRYjoX7F8e4AFF6kOaE-TZiVNMPQ5kI=" class="d-block w-100" alt="UI/UX">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>UI/UX Design</h5>
+                        <p>UI (User Interface) and UX (User Experience) design are crucial aspects of creating digital products that are visually appealing and user-friendly. Striking a balance between aesthetic design and intuitive functionality is key to delivering a successful and satisfying user experience.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">dev</strong>
+          <h3 class="mb-0">web development</h3>
+          <div class="mb-1 text-body-secondary">jan 18</div>
+          <p class="card-text mb-auto">Web development is the process of creating and maintaining websites and web applications. It involves a combination of skills, technologies, and methodologies to deliver a seamless and interactive user experience on the internet. From simple static web pages to complex dynamic web applications, web development encompasses a wide range of activities.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?w=1500&auto=500&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" class="d-block w-100 img-fluid" alt="" width="200" height="250">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+          <h3 class="mb-0">user interface and user experiance</h3>
+          <div class="mb-1 text-body-secondary">jan 18</div>
+          <p class="mb-auto">UI (User Interface) and UX (User Experience) are two critical aspects of web and application design, focusing on creating interfaces that are not only visually appealing but also provide a seamless and satisfying experience for users. Both UI and UX play pivotal roles in ensuring a product's success by enhancing usability and user satisfaction.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://images.unsplash.com/photo-1536148935331-408321065b18?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="" width="200" height="250">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Algorithm</strong>
+          <h3 class="mb-0">DSA</h3>
+          <div class="mb-1 text-body-secondary">jan 18</div>
+          <p class="card-text mb-auto">Data Structures and Algorithms (DSA) form the backbone of computer science and programming. They are fundamental concepts that enable developers to organize and manipulate data effectively, solve complex problems, and optimize the performance of software applications.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://media.istockphoto.com/id/1488105061/photo/the-power-of-ai-transforming-industries-and-customer-service-a-look-into-the-future-yellow-ai.webp?b=1&s=170667a&w=0&k=20&c=6UivX9iZ1MCaAamDJtyfwpGHpP0XoGJ5KmusjMxAR4M=" width="200" height="250">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Notes</strong>
+          <h3 class="mb-0">class notes</h3>
+          <div class="mb-1 text-body-secondary">Nov 11</div>
+          <p class="mb-auto">The NMAM Institute of Technology, located in Nitte, Karnataka, is renowned for providing quality education in engineering and technology. A notes website dedicated to NMAMIT serves as a valuable resource for students to access lecture notes, study materials, and other educational content related to their coursework. Here's an overview of what such a website could offer:</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            
+          </a>
+        </div>
+      <br>
+      
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
